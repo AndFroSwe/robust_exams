@@ -1,0 +1,36 @@
+\documentclass[10pt, a4paper]{article}
+
+\usepackage[english]{babel}
+
+% Define environment for question
+% Set counter for questions
+\newcounter{qcounter}
+% Start at value one
+\setcounter{qcounter}{1}
+ % Define the command
+\newcommand{\q}[2]{
+    \begin{description}
+        \item[Q\arabic{qcounter}\refstepcounter{qcounter}:] \textbf{#1}
+        \item[A:] #2
+    \end{description}
+}
+
+\begin{document}
+\begin{titlepage}
+    \centering
+    {\scshape\LARGE Robust Mechatronics, MF2042 \par}
+    \vspace{1cm}
+    {\scshape\large Solutions to Exam April 2015 \par}
+    \vfill
+    Andreas Froderberg
+\end{titlepage}
+% Part A 
+{\centering \scshape \LARGE\underline{Part A} \par}
+\q{question}{answer}
+
+\clearpage
+% Part B 
+{\centering \scshape \LARGE\underline{Part B} \par}
+
+\clearpage
+\end{document}
